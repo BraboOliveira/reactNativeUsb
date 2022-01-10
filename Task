@@ -1,0 +1,92 @@
+yarn run v1.22.5
+$ yarn --cwd example android :app:compileDebugJavaWithJavac
+$ react-native run-android :app:compileDebugJavaWithJavac
+info Running jetifier to migrate libraries to AndroidX. You can disable it using "--no-jetifier" flag.
+Jetifier found 969 file(s) to forward-jetify. Using 6 workers...
+info JS server already running.
+info Installing the app...
+> Task :app:generatePackageList
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :usbcamerarn:preBuild UP-TO-DATE
+> Task :usbcamerarn:preDebugBuild UP-TO-DATE
+> Task :usbcamerarn:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :usbcamerarn:packageDebugRenderscript NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:checkDebugManifest UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :usbcamerarn:checkDebugManifest UP-TO-DATE
+> Task :usbcamerarn:compileDebugRenderscript NO-SOURCE
+> Task :usbcamerarn:generateDebugBuildConfig UP-TO-DATE
+> Task :usbcamerarn:generateDebugResValues UP-TO-DATE
+> Task :usbcamerarn:generateDebugResources UP-TO-DATE
+> Task :usbcamerarn:packageDebugResources UP-TO-DATE
+> Task :usbcamerarn:parseDebugLibraryResources UP-TO-DATE
+> Task :usbcamerarn:processDebugManifest UP-TO-DATE
+> Task :usbcamerarn:generateDebugRFile UP-TO-DATE
+> Task :usbcamerarn:compileDebugKotlin UP-TO-DATE
+> Task :usbcamerarn:javaPreCompileDebug UP-TO-DATE
+> Task :usbcamerarn:compileDebugJavaWithJavac UP-TO-DATE
+> Task :usbcamerarn:bundleLibCompileDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mainApkListPersistenceDebug UP-TO-DATE
+> Task :app:bundleDebugJsAndAssets SKIPPED
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :usbcamerarn:mergeDebugShaders UP-TO-DATE
+> Task :usbcamerarn:compileDebugShaders UP-TO-DATE
+> Task :usbcamerarn:generateDebugAssets UP-TO-DATE
+> Task :usbcamerarn:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:copyDebugBundledJs SKIPPED
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :usbcamerarn:processDebugJavaRes NO-SOURCE
+> Task :usbcamerarn:bundleLibResDebug UP-TO-DATE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :usbcamerarn:bundleLibRuntimeDebug UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:signingConfigWriterDebug UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :usbcamerarn:mergeDebugJniLibFolders UP-TO-DATE
+> Task :usbcamerarn:mergeDebugNativeLibs UP-TO-DATE
+> Task :usbcamerarn:stripDebugDebugSymbols UP-TO-DATE
+> Task :usbcamerarn:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols FAILED
+> Task :app:mergeDexDebug
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.2/userguide/command_line_interface.html#sec:command_line_warnings
+45 actionable tasks: 3 executed, 42 up-to-date
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:stripDebugDebugSymbols'.
+> No toolchains found in the NDK toolchains folder for ABI with prefix: arm-linux-androideabi
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+
+Error: Command failed: gradlew.bat app:installDebug -PreactNativeDevServerPort=8081
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
